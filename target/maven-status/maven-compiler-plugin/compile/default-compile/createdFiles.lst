@@ -1,0 +1,4 @@
+pages\SwagLabsLoginPage.class
+pages\BasePage.class
+base\BaseUIHelper.class
+pages\ProductPage.class
