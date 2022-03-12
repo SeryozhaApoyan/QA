@@ -12,11 +12,11 @@ public class AutoAmtest {
         autoAm.inputsearchbox("Auto.am");
         autoAm.webclick();
         autoAm.dismiss();
-        autoAm.klini();
-        autoAm.klini2("Tesla");
-        autoAm.modeltesla();
-        autoAm.ymodel("Model Y");
-        autoAm.popoq();
+        autoAm.carType();
+        autoAm.setCarType("Tesla");
+        autoAm.modelTesla();
+        autoAm.yModel("Model Y");
+        autoAm.year();
         autoAm.sendyear("2018");
         autoAm.priceclik();
         autoAm.senprice("67000");

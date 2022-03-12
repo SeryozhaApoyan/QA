@@ -23,8 +23,8 @@ public class PracticePageTest {
         practicePageTest.SetAlertBtn();
         String expectedText = "Advanced Selenium Framework Pageobject, TestNG, Maven, Jenkins,C";
         String actualText = practicePageTest.getTableDataContent(9, 2);
-        assertEquals(expectedText, actualText, "Texts doesn't matching -> "
-                + expectedText + " doesn't matching " + actualText);
+        assertEquals(expectedText, actualText, "Advanced Selenium Framework Pageobject, TestNG, Maven, Jenkins,C");
+
         practicePageTest.setText();
         practicePageTest.clickHide();
         practicePageTest.clickShow();

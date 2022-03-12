@@ -25,15 +25,15 @@ public class AutoAmPage extends BasePage{
         @FindBy(id = "ppialog-popover-cancel-button")
         WebElement but;
         @FindBy(css = "#home-filters > div:nth-child(1) > label > span > span.selection > span")
-        WebElement porc;
+        WebElement carTypeButton;
         @FindBy(css = "body > span > span > span.select2-search.select2-search--dropdown > input")
-        WebElement porc2;
+        WebElement inputCarType;
         @FindBy(css = " #select2-v-model-container")
-        WebElement modclick;
+        WebElement carModelButton;
         @FindBy(css = "body > span > span > span.select2-search.select2-search--dropdown > input")
-        WebElement modelsend;
+        WebElement modelSend;
         @FindBy(css = "#home-filters > div:nth-child(3) > label:nth-child(1) > span > span.selection > span > span.select2-selection__arrow")
-        WebElement selectyear;
+        WebElement selectYear;
         @FindBy(css = "body > span > span > span.select2-search.select2-search--dropdown > input")
         WebElement yearsend;
         @FindBy(css = "#home-filters > div:nth-child(4) > label:nth-child(1) > span > span.selection > span > span.select2-selection__arrow")
@@ -62,28 +62,28 @@ public class AutoAmPage extends BasePage{
             but.click();
         }
 
-        public void klini() {
-            porc.click();
+        public void carType() {
+            carTypeButton.click();
 
         }
 
-        public void klini2(String box) {
-            porc2.sendKeys(box);
-            porc2.sendKeys(Keys.ENTER);
+        public void setCarType(String box) {
+            inputCarType.sendKeys(box);
+            inputCarType.sendKeys(Keys.ENTER);
 
         }
 
-        public void modeltesla() {
-            modclick.click();
+        public void modelTesla() {
+            carModelButton.click();
         }
 
-        public void ymodel(String ogl) {
-            modelsend.sendKeys(ogl);
-            modelsend.sendKeys(Keys.ENTER);
+        public void yModel(String ogl) {
+            modelSend.sendKeys(ogl);
+            modelSend.sendKeys(Keys.ENTER);
         }
 
-        public void popoq() {
-            selectyear.click();
+        public void year() {
+            selectYear.click();
         }
 
         public void sendyear(String olf) {
