@@ -28,7 +28,7 @@ public class AutoAmPage extends BasePage{
         WebElement carTypeButton;
         @FindBy(css = "body > span > span > span.select2-search.select2-search--dropdown > input")
         WebElement inputCarType;
-        @FindBy(css = " #select2-v-model-container")
+        @FindBy(css = "[id='select2-v-model-container']")
         WebElement carModelButton;
         @FindBy(css = "body > span > span > span.select2-search.select2-search--dropdown > input")
         WebElement modelSend;

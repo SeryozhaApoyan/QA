@@ -3,17 +3,20 @@ import org.testng.annotations.Test;
 import pages.*;
 import AutoAmPAge.AutoAmPage;
 
+import java.io.FileNotFoundException;
+
 public class AutoAmtest {
 
     AutoAmPage autoAm;
     @Test(testName = "Avto.am test")
-    public void checktesla() {
+    public void checktesla() throws InterruptedException {
         autoAm = new AutoAmPage();
         autoAm.inputsearchbox("Auto.am");
         autoAm.webclick();
         autoAm.dismiss();
         autoAm.carType();
         autoAm.setCarType("Tesla");
+        Thread.sleep(1000);
         autoAm.modelTesla();
         autoAm.yModel("Model Y");
         autoAm.year();
